@@ -339,23 +339,30 @@ header.sticky{
 	transition: ease .45s;
 	cursor: pointer;
 }
-.s img{
-	height: 65px;
-	width: 65px;
-	background: #f75124;
-	padding: 15px;
-	border-radius: 50%;
-	margin-bottom: 20px;
+
+.s img {
+    height: 65px;
+    width: 65px;
+    background: transparent;
+    padding: 15px;
+    border: 10px solid #f75124;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-sizing: content-box;
 }
-.s.s-tow img{
-	background: #baebcd;
+
+.s.s-tow img {
+    border-color: #baebcd;
 }
-.s.s-three img{
-	background: #d9d1fa;
+
+.s.s-three img {
+    border-color: #d9d1fa;
 }
-.s.s-four img{
-	background: #faedce;
+
+.s.s-four img {
+    border-color: #faedce;
 }
+
 .row h3{
 	font-size: 24px;
 	font-weight: 500;
@@ -461,6 +468,29 @@ header.sticky{
 	text-align: center;
 	padding: 40px;
 }
+
+
+#phone-number.hidden {
+    display: none;
+}
+
+#reveal-phone {
+    background: transparent;
+    color: #f75124;
+    border: 1px solid #f75124;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#reveal-phone:hover {
+    background: #f75124;
+    color: #ffffff;
+}
+
+
 .ends p{
 	font-size: var(--p-font);
 	letter-spacing: 1px;
@@ -558,6 +588,8 @@ header.sticky{
 		padding: 65px 3%;
 		transition: .3s;
 	}
+
+
 }
 @media (max-width: 540px){
 	.contact .action form input[type="email"] {
