@@ -28,3 +28,14 @@ sr.reveal('.home-img',{delay:350, origin:'right'})
 
 sr.reveal('.sub-service,.about,.portfolio,.service,.cta,.contact',{delay:200, origin:'bottom'})
 
+
+document.getElementById("reveal-phone").addEventListener("click", function () {
+    const phoneNumber = document.getElementById("phone-number");
+
+    phoneNumber.classList.remove("hidden");
+
+    this.textContent = "Call Now";
+    this.onclick = function () {
+        window.location.href = "tel:+9779818078306";
+    };
+});
